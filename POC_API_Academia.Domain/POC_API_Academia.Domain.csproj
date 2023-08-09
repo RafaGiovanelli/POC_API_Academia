@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POC_API_Academia.Models\POC_API_Academia.Models.csproj" />
+    <ProjectReference Include="..\POC_API_Academia.MySQL\POC_API_Academia.MySQL.csproj" />
+  </ItemGroup>
+
+</Project>
