@@ -9,8 +9,8 @@ namespace POC_API_Academia.IOC
     {
         public static void ConfigureService(IServiceCollection services)    
         {
-            services.AddTransient<IFuncionarioDomain, FuncionarioDomain>();
             services.AddTransient<IFuncionarioApplication, FuncionarioApplication>();
+            services.AddTransient<IFuncionarioDomain, FuncionarioDomain>();
             services.AddTransient<IFuncionarioRepository, FuncionarioRepository>();
         }
     }
