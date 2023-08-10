@@ -5,5 +5,6 @@ namespace POC_API_Academia.MySQL.Funcionarios
     public interface IFuncionarioRepository
     {
         List<Funcionario> ListFuncionarios();
+        Funcionario GetFuncionario(int id);
     }
 }

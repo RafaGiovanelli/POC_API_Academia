@@ -5,5 +5,6 @@ namespace POC_API_Academia.Domain.Funcionarios
     public interface IFuncionarioDomain
     {
         List<Funcionario> ListFuncionarios();
+        Funcionario GetFuncionario(int id);
     }
 }

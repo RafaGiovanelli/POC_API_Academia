@@ -16,5 +16,10 @@ namespace POC_API_Academia.Apllication.Funcionarios
         {
             return _funcionarioDomain.ListFuncionarios();
         }
+
+        public Funcionario GetFuncionario(int id) 
+        {
+            return _funcionarioDomain.GetFuncionario(id);
+        }
     }
 }

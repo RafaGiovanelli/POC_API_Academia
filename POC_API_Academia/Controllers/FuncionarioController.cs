@@ -21,5 +21,11 @@ namespace POC_API_Academia.Controllers
         {
             return _funcionarioApplication.ListFuncionarios();
         }
+
+        [HttpGet ("Busca Funcionario por ID")]
+        public Funcionario GetFuncionario(int id) 
+        {
+            return _funcionarioApplication.GetFuncionario(id);
+        }
     }
 }

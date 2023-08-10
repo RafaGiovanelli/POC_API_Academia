@@ -38,5 +38,23 @@ namespace POC_API_Academia.MySQL.Funcionarios
                 _mySqlConn.Close();
             }
         }
+
+        public Funcionario GetFuncionario(int id) 
+        {
+            try
+            {
+                _mySqlConn.Open();
+
+                return _mySqlConn.Query<Funcionario>($"select * from Funcionario where Id = {id}").FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally 
+            {
+                _mySqlConn.Close(); 
+            }
+        }
     }
 }
